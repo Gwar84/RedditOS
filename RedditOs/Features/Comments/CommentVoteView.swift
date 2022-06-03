@@ -25,6 +25,8 @@ struct CommentVoteView: View {
             
             Text(viewModel.comment.score?.toRoundedSuffixAsString() ?? "Vote")
                 .font(.callout)
+                .fontWeight(.bold)
+                .minimumScaleFactor(0.1)
                 .lineLimit(1)
             
             Button(action: {
